@@ -1,0 +1,64 @@
+T164lab1
+v7
+r0
+t419967338.516414
+cCheck dependencies
+cCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o /Users/adamwells/Documents/164lab1/main.c normal x86_64 c com.apple.compilers.gcc.4_2
+cLd /Users/adamwells/Documents/164lab1/build/Debug/164lab1 normal x86_64
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004A769DAB00000000000000EE
+t1249287595
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/164lab1.LinkFileList
+c000000005357F9E90000000000000068
+t1398274537
+s104
+
+N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o
+t1398274538
+s2660
+
+N/Users/adamwells/Documents/164lab1/build/Debug/164lab1
+t1398274538
+s8960
+
+N/Users/adamwells/Documents/164lab1/main.c
+c000000005357F9220000000000000089
+t1398274338
+s137
+i<stdio.h>
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies419967337#419967337#0(0"0(0#1#0"17194778624#0"0#
+
+CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o /Users/adamwells/Documents/164lab1/main.c normal x86_64 c com.apple.compilers.gcc.4_2
+s419967337.718351
+e419967338.065975
+r1
+xCompileC
+xbuild/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o
+x/Users/adamwells/Documents/164lab1/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Users/adamwells/Documents/164lab1/main.c419967337#419967338#0(0"0(0#0#41"/Users/adamwells/Documents/164lab1/main.c17192809728#1226"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/main.c -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o0#
+
+CLd /Users/adamwells/Documents/164lab1/build/Debug/164lab1 normal x86_64
+s419967338.066077
+e419967338.516355
+r1
+xLd
+x/Users/adamwells/Documents/164lab1/build/Debug/164lab1
+xnormal
+xx86_64
+lSLF07#2@59"Link /Users/adamwells/Documents/164lab1/build/Debug/164lab1419967338#419967338#0(0"0(0#0#0"4317954048#478"    cd /Users/adamwells/Documents/164lab1    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/adamwells/Documents/164lab1/build/Debug -F/Users/adamwells/Documents/164lab1/build/Debug -filelist /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/164lab1.LinkFileList -mmacosx-version-min=10.6 -o /Users/adamwells/Documents/164lab1/build/Debug/164lab10#
+
