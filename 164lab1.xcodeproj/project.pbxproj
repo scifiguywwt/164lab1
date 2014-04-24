@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8DD76FAC0486AB0100D96B5E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.c */; settings = {ATTRIBUTES = (); }; };
+		87E3AF671908355800ACA9B7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E3AF661908355800ACA9B7 /* GLUT.framework */; };
+		87E3AF6B1908357A00ACA9B7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E3AF6A1908357A00ACA9B7 /* OpenGL.framework */; };
+		87E3AFB31909C3CC00ACA9B7 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E3AFB21909C3CC00ACA9B7 /* util.cpp */; };
+		8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* 164lab1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* 164lab1.1 */; };
 /* End PBXBuildFile section */
 
@@ -25,10 +28,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		08FB7796FE84155DC02AAC07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		08FB7796FE84155DC02AAC07 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		87E3AEED1908328700ACA9B7 /* hole.02.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hole.02.db; sourceTree = "<group>"; };
 		87E3AEEE1908328700ACA9B7 /* hole.01.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hole.01.db; sourceTree = "<group>"; };
 		87E3AEEF1908328700ACA9B7 /* hole.00.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = hole.00.db; sourceTree = "<group>"; };
+		87E3AF661908355800ACA9B7 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		87E3AF6A1908357A00ACA9B7 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		87E3AFA01909C30400ACA9B7 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		87E3AFB11909C3CC00ACA9B7 /* untitled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = untitled.h; sourceTree = "<group>"; };
+		87E3AFB21909C3CC00ACA9B7 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
 		8DD76FB20486AB0100D96B5E /* 164lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 164lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* 164lab1.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = 164lab1.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87E3AF671908355800ACA9B7 /* GLUT.framework in Frameworks */,
+				87E3AF6B1908357A00ACA9B7 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,9 +60,14 @@
 				87E3AEED1908328700ACA9B7 /* hole.02.db */,
 				87E3AEEE1908328700ACA9B7 /* hole.01.db */,
 				87E3AEEF1908328700ACA9B7 /* hole.00.db */,
+				87E3AFA01909C30400ACA9B7 /* util.h */,
 				08FB7795FE84155DC02AAC07 /* Source */,
 				C6A0FF2B0290797F04C91782 /* Documentation */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
+				87E3AF661908355800ACA9B7 /* GLUT.framework */,
+				87E3AF6A1908357A00ACA9B7 /* OpenGL.framework */,
+				87E3AFB11909C3CC00ACA9B7 /* untitled.h */,
+				87E3AFB21909C3CC00ACA9B7 /* util.cpp */,
 			);
 			name = 164lab1;
 			sourceTree = "<group>";
@@ -60,7 +75,7 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				08FB7796FE84155DC02AAC07 /* main.c */,
+				08FB7796FE84155DC02AAC07 /* main.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -131,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD76FAC0486AB0100D96B5E /* main.c in Sources */,
+				8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */,
+				87E3AFB31909C3CC00ACA9B7 /* util.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
