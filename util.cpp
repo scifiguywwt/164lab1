@@ -3,20 +3,28 @@
 #include <GLUT/glut.h>
 
 cam_mode cmode = DEFAULT;
-float xTrans = 0.0, yTrans = 0.0, zTrans = -8.0;
+float xTrans = 0.0, yTrans = -1.0, zTrans = -8.0;
 float xRot = 0.0, yRot = 0.0, zRot = 0.0;
 
 // Some camera functions are provided for viewing convinience
 void camera() {
 	// back up to be able to see our objects
 	glTranslatef(xTrans, yTrans, zTrans);
-	glRotatef(5, xRot, yRot, zRot);
+	glRotatef(xRot, 1, 0, 0);
+	glRotatef(yRot, 0, 1, 0);
+	glRotatef(zRot, 0, 0, 1);
 	
 	switch(cmode) {
 		case DEFAULT:
 			break;
 		case FRONT:
-			glRotatef( 90, 0.0, 1.0, 0.0 );
+			//glRotatef( 90, 0.0, 1.0, 0.0 );
+			yRot = 90;
+			xRot = 0;
+			zRot = 0;
+			xTrans = 0;
+			yTrans = 0;
+			zTrans = -8.0;
 			break;
 		case SIDE:
 			glRotatef( 180, 0.0, 1.0, 0.0 );
@@ -32,25 +40,49 @@ void camera() {
 			break;
 
 		case BACKUP:
-			zTrans-=.5;
+			zTrans-=.05;
 			break;
 		case GOFORWARD:
-			zTrans+=.5;
+			zTrans+=.05;
 			break;
 			
 		case LEFT:
-			xTrans-=.5;
+			xTrans+=.05;
 			break;
 		case RIGHT:
-			xTrans+=.5;
+			xTrans-=.05;
 			break;
+			
+		case UP:
+			yTrans+=.05;
+			break;
+		case DOWN:
+			yTrans-=.05;
+			break;
+			
+		case ROTLEFT:
+			yRot += 1;
+			break;
+		case ROTRIGHT:
+			yRot -= 1;
+			break;
+		case ROTUP:
+			xRot += 1;
+			break;
+		case ROTDOWN:
+			xRot -= 1;
+			break;
+
+
+
+
+
+
 
 
 		case 'q':
 			//exit(0);
 			break;
-			
-
 
 	}
 }

@@ -77,9 +77,28 @@ void cb_keyboard(unsigned char key, int x, int y) {
 		case 'd':
 			set_cam(RIGHT);
 			break;
+		case 'f':
+			set_cam(UP);
+			break;
+		case 'r':
+			set_cam(DOWN);
+			break;
+			
+		case 'i':
+			set_cam(ROTUP);
+			break;
+		case 'k':
+			set_cam(ROTDOWN);
+			break;
+		case 'j':
+			set_cam(ROTLEFT);
+			break;
+		case 'l':
+			set_cam(ROTRIGHT);
+			break;
 
 
-		
+
 
 		case 'q':
 			exit(0);
