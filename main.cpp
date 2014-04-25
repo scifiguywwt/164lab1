@@ -13,19 +13,20 @@ void drawTile(float tile[]) {
 	glBegin(GL_POLYGON);
 	glColor3f(0, 255, 0);
 	//printf("Made it here.");
-	for(int i = 2, length = sizeof(tile)/sizeof(float); i >= length; i += 3) {
+	for(int i = 2, length = 4*tile[1] + 2; i < length; i += 3) {
 		glVertex3f(tile[i], tile[i+1], tile[i+2]);
-		printf("%4.2f\n", length);
-		printf("%4.2f\n", tile[i]);		
+		printf("LENGTH = %i\n", length);
+		printf("X VALUE = %4.2f Y VALUE = %4.2f Z VALUE = %4.2f\n", tile[i], tile[i+1], tile[i+2]);		
 	}
 	glEnd();
 	glFlush();
 	
-	
+	/*
 	GLUquadricObj *quadratic;
 	quadratic = gluNewQuadric();
 	gluCylinder(quadratic, 1, 1, 2, 32, 32);
 	glFlush();
+	 */
 	
 	
 	//printf("Made it to here.");
