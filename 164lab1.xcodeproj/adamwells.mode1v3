@@ -303,12 +303,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>main.cpp</string>
+								<string>util.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -316,11 +318,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>main.cpp</string>
+										<string>util.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>87E94E0D190B0DF000054503</string>
+										<string>87E94E1E190B0F4700054503</string>
 										<key>history</key>
 										<array>
 											<string>87E3AF441908345500ACA9B7</string>
@@ -330,8 +332,8 @@
 											<string>87E94DAD190B076F00054503</string>
 											<string>87E94DAF190B076F00054503</string>
 											<string>87E94DF8190B0C4400054503</string>
+											<string>87E94E13190B0E9400054503</string>
 											<string>87E94E0B190B0DF000054503</string>
-											<string>87E94E0C190B0DF000054503</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -353,8 +355,6 @@
 							<string>483pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -531,13 +531,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>87E94E0E190B0DF000054503</string>
 		<string>87E94BE6190A2EB100054503</string>
 		<string>87E94BE7190A2EB100054503</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>87E3AEDD190830B300ACA9B7</string>
-		<string>/Users/adamwells/Documents/164lab1/164lab1.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/adamwells/Documents/164lab1/164lab1.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>2 53 1276 722 0 0 1280 778 </string>
@@ -888,7 +887,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {650, 210}}</string>
 								<key>RubberWindowFrame</key>
-								<string>551 350 650 251 0 0 1280 778 </string>
+								<string>569 439 650 251 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -917,7 +916,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>551 350 650 251 0 0 1280 778 </string>
+			<string>569 439 650 251 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

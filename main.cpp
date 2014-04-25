@@ -97,9 +97,6 @@ void cb_keyboard(unsigned char key, int x, int y) {
 			set_cam(ROTRIGHT);
 			break;
 
-
-
-
 		case 'q':
 			exit(0);
 			break;

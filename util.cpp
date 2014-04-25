@@ -27,13 +27,31 @@ void camera() {
 			zTrans = -8.0;
 			break;
 		case SIDE:
-			glRotatef( 180, 0.0, 1.0, 0.0 );
+			//glRotatef( 180, 0.0, 1.0, 0.0 );
+			yRot = 180;
+			xRot = 0;
+			zRot = 0;
+			xTrans = 0;
+			yTrans = 0;
+			zTrans = -8;
 			break;
 		case TOP:
-			glRotatef( -90, 1.0, 0.0, 0.0 );
+			//glRotatef( -90, 1.0, 0.0, 0.0 );
+			xRot = 90;
+			yRot = 0;
+			zRot = 0;
+			xTrans = 0;
+			yTrans = 0;
+			zTrans = -8;
 			break;
 		case ANGLE:
 			glRotatef( 45, 0.0, 1.0, 0.0 );
+			yRot = 45;
+			xRot = 0;
+			zRot = 0;
+			xTrans = 0;
+			yTrans = 0;
+			zTrans = -8;
 			break;
 			
 		case STOP:
@@ -72,13 +90,6 @@ void camera() {
 		case ROTDOWN:
 			xRot -= 1;
 			break;
-
-
-
-
-
-
-
 
 		case 'q':
 			//exit(0);
