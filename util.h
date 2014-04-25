@@ -6,7 +6,7 @@
 #ifndef UTIL_H
 #define UTIL_H
 
-enum cam_mode {DEFAULT, FRONT, SIDE, TOP, ANGLE};
+enum cam_mode {DEFAULT, FRONT, SIDE, TOP, ANGLE, BACKUP, GOFORWARD, STOP, LEFT, RIGHT};
 
 void camera();
 

@@ -9,6 +9,7 @@
 #include <time.h>
 #include <math.h>
 
+
 void drawTile(float tile[]) {
 	glBegin(GL_POLYGON);
 	glColor3f(0, 255, 0);
@@ -60,12 +61,32 @@ void cb_keyboard(unsigned char key, int x, int y) {
 		case '5':
 			set_cam(ANGLE);
 			break;
-		case 'a':
-			//spin();
+		case ' ':
+			set_cam(STOP);
 			break;
+
+		case 's':
+			set_cam(BACKUP);
+			break;
+		case 'w':
+			set_cam(GOFORWARD);
+			break;
+		case 'a':
+			set_cam(LEFT);
+			break;
+		case 'd':
+			set_cam(RIGHT);
+			break;
+
+
+		
+
 		case 'q':
 			exit(0);
 			break;
+			
+
+
 	}
 }
 
@@ -171,6 +192,5 @@ int main(int argc, char** argv) {
 	glutMainLoop();
 	return 0;
 }
-
 
 

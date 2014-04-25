@@ -3,11 +3,14 @@
 #include <GLUT/glut.h>
 
 cam_mode cmode = DEFAULT;
+float xTrans = 0.0, yTrans = 0.0, zTrans = -8.0;
+float xRot = 0.0, yRot = 0.0, zRot = 0.0;
 
 // Some camera functions are provided for viewing convinience
 void camera() {
 	// back up to be able to see our objects
-	glTranslatef(0.0, 0.0, -8.0);
+	glTranslatef(xTrans, yTrans, zTrans);
+	glRotatef(5, xRot, yRot, zRot);
 	
 	switch(cmode) {
 		case DEFAULT:
@@ -24,9 +27,31 @@ void camera() {
 		case ANGLE:
 			glRotatef( 45, 0.0, 1.0, 0.0 );
 			break;
+			
+		case STOP:
+			break;
+
+		case BACKUP:
+			zTrans-=.5;
+			break;
+		case GOFORWARD:
+			zTrans+=.5;
+			break;
+			
+		case LEFT:
+			xTrans-=.5;
+			break;
+		case RIGHT:
+			xTrans+=.5;
+			break;
+
+
 		case 'q':
 			//exit(0);
 			break;
+			
+
+
 	}
 }
 
