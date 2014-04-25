@@ -10,6 +10,7 @@
 		87E3AF671908355800ACA9B7 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E3AF661908355800ACA9B7 /* GLUT.framework */; };
 		87E3AF6B1908357A00ACA9B7 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87E3AF6A1908357A00ACA9B7 /* OpenGL.framework */; };
 		87E3AFB31909C3CC00ACA9B7 /* util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E3AFB21909C3CC00ACA9B7 /* util.cpp */; };
+		87E94EA3190B1C0900054503 /* reader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 87E94EA2190B1C0900054503 /* reader.cpp */; };
 		8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* 164lab1.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* 164lab1.1 */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,8 @@
 		87E3AFA01909C30400ACA9B7 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		87E3AFB11909C3CC00ACA9B7 /* untitled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = untitled.h; sourceTree = "<group>"; };
 		87E3AFB21909C3CC00ACA9B7 /* util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = util.cpp; sourceTree = "<group>"; };
+		87E94EA1190B1C0900054503 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reader.h; path = ../../Downloads/reader.h; sourceTree = SOURCE_ROOT; };
+		87E94EA2190B1C0900054503 /* reader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = reader.cpp; path = ../../Downloads/reader.cpp; sourceTree = SOURCE_ROOT; };
 		8DD76FB20486AB0100D96B5E /* 164lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 164lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6A0FF2C0290799A04C91782 /* 164lab1.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = 164lab1.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +60,8 @@
 		08FB7794FE84155DC02AAC07 /* 164lab1 */ = {
 			isa = PBXGroup;
 			children = (
+				87E94EA1190B1C0900054503 /* reader.h */,
+				87E94EA2190B1C0900054503 /* reader.cpp */,
 				87E3AEED1908328700ACA9B7 /* hole.02.db */,
 				87E3AEEE1908328700ACA9B7 /* hole.01.db */,
 				87E3AEEF1908328700ACA9B7 /* hole.00.db */,
@@ -148,6 +153,7 @@
 			files = (
 				8DD76FAC0486AB0100D96B5E /* main.cpp in Sources */,
 				87E3AFB31909C3CC00ACA9B7 /* util.cpp in Sources */,
+				87E94EA3190B1C0900054503 /* reader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

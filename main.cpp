@@ -232,15 +232,21 @@ int main(int argc, char** argv) {
 	glutInitWindowSize(640, 480);
 	glutCreateWindow("CMPS164 Lab 1: Minigolf Rendering");
 	
+	glClearColor(0,0,0,0); // set background to black
+	glEnable(GL_NORMALIZE);
+	glEnable(GL_DEPTH_TEST);
+	//glEnable(GL_LIGHTING);
+	//glEnable(GL_LIGHT0);
+	//glEnable(GL_COLOR_MATERIAL);
+	
 	glutDisplayFunc(cb_display);
 	glutReshapeFunc(cb_reshape);
 	glutIdleFunc(cb_idle);
 	glutKeyboardFunc(cb_keyboard);
 	
-	glClearColor(0,0,0,0); // set background to black
-	glEnable(GL_DEPTH_TEST);
-	glEnable(GL_LIGHTING);
-	glEnable(GL_LIGHT0);
+
+	
+
 	
 
 	
