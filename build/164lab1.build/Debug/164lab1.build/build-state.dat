@@ -1,7 +1,7 @@
 T164lab1
 v7
 r0
-t420147220.913127
+t420150293.054714
 cCheck dependencies
 cCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o /Users/adamwells/Documents/164lab1/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 cCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/util.o /Users/adamwells/Documents/164lab1/util.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
@@ -63,16 +63,16 @@ t1398377616
 s208
 
 N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o
-t1398454420
-s8572
+t1398457148
+s13316
 
 N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/util.o
 t1398377615
 s6140
 
 N/Users/adamwells/Documents/164lab1/build/Debug/164lab1
-t1398454420
-s16760
+t1398457148
+s20992
 
 N/Users/adamwells/Documents/164lab1/main.c
 c000000005357FCC50000000000000089
@@ -81,9 +81,9 @@ s137
 i<stdio.h>
 
 N/Users/adamwells/Documents/164lab1/main.cpp
-c00000000535AB894000000000000098B
-t1398454420
-s2443
+c00000000535AC33B0000000000001249
+t1398457147
+s4681
 i<stdio.h>
 i<stdlib.h>
 i<GLUT/glut.h>
@@ -110,7 +110,7 @@ s284
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies420147220#420147220#0(0"0(0#1#0"4317954048#0"0#
+lSLF07#2@18"Check dependencies420150293#420150293#0(0"0(0#1#0"4317954048#0"0#
 
 CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o /Users/adamwells/Documents/164lab1/main.c normal x86_64 c com.apple.compilers.gcc.4_2
 s419968069.209479
@@ -126,8 +126,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@49"Compile /Users/adamwells/Documents/164lab1/main.c419968069#419968069#0(0"0(0#0#41"/Users/adamwells/Documents/164lab1/main.c4317954048#1226"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/main.c -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o0#
 
 CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o /Users/adamwells/Documents/164lab1/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s420147220.739322
-e420147220.881086
+s420149948.038174
+e420149948.187582
 r1
 xCompileC
 xbuild/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o
@@ -136,7 +136,7 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@51"Compile /Users/adamwells/Documents/164lab1/main.cpp420147220#420147220#0(0"0(0#0#43"/Users/adamwells/Documents/164lab1/main.cpp4317954048#1247"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/main.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o0#
+lSLF07#2@51"Compile /Users/adamwells/Documents/164lab1/main.cpp420149948#420149948#0(0"0(0#0#43"/Users/adamwells/Documents/164lab1/main.cpp4317954048#1247"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/main.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o0#
 
 CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/util.o /Users/adamwells/Documents/164lab1/util.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 s420070416.895816
@@ -152,12 +152,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@51"Compile /Users/adamwells/Documents/164lab1/util.cpp420070416#420070416#0(415"/Users/adamwells/Documents/164lab1/util.cpp: In function 'void draw_axis(float)':/Users/adamwells/Documents/164lab1/util.cpp:57: warning: deprecated conversion from string constant to 'char*'/Users/adamwells/Documents/164lab1/util.cpp:57: warning: deprecated conversion from string constant to 'char*'/Users/adamwells/Documents/164lab1/util.cpp:57: warning: deprecated conversion from string constant to 'char*'3(22@53"Deprecated conversion from string constant to 'char*'420070416#82#111#0(6@43"/Users/adamwells/Documents/164lab1/util.cpp420070415#57#0#57#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'420070416#193#111#0(6@43"/Users/adamwells/Documents/164lab1/util.cpp420070415#57#0#57#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'420070416#304#111#0(6@43"/Users/adamwells/Documents/164lab1/util.cpp420070415#57#0#57#0#49"deprecated conversion from string constant to '*'0(0#0#43"/Users/adamwells/Documents/164lab1/util.cpp4317954048#1247"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/util.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/util.o0#
 
 CLd /Users/adamwells/Documents/164lab1/build/Debug/164lab1 normal x86_64
-s420147220.881312
-e420147220.908640
+s420149948.187847
+e420149948.212446
 r1
 xLd
 x/Users/adamwells/Documents/164lab1/build/Debug/164lab1
 xnormal
 xx86_64
-lSLF07#2@59"Link /Users/adamwells/Documents/164lab1/build/Debug/164lab1420147220#420147220#0(0"0(0#0#0"4317954048#512"    cd /Users/adamwells/Documents/164lab1    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/adamwells/Documents/164lab1/build/Debug -F/Users/adamwells/Documents/164lab1/build/Debug -filelist /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/164lab1.LinkFileList -mmacosx-version-min=10.6 -framework GLUT -framework OpenGL -o /Users/adamwells/Documents/164lab1/build/Debug/164lab10#
+lSLF07#2@59"Link /Users/adamwells/Documents/164lab1/build/Debug/164lab1420149948#420149948#0(0"0(0#0#0"4317954048#512"    cd /Users/adamwells/Documents/164lab1    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/adamwells/Documents/164lab1/build/Debug -F/Users/adamwells/Documents/164lab1/build/Debug -filelist /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/164lab1.LinkFileList -mmacosx-version-min=10.6 -framework GLUT -framework OpenGL -o /Users/adamwells/Documents/164lab1/build/Debug/164lab10#
 

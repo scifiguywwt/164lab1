@@ -322,18 +322,18 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>87E94C47190AF01500054503</string>
+										<string>87E94CD2190AFABC00054503</string>
 										<key>history</key>
 										<array>
 											<string>87E3AF441908345500ACA9B7</string>
 											<string>870A800D190A1D1000C2DB33</string>
-											<string>870A802C190A270B00C2DB33</string>
-											<string>870A802D190A270B00C2DB33</string>
 											<string>870A802E190A270B00C2DB33</string>
-											<string>870A80B2190A2C6A00C2DB33</string>
 											<string>870A80B9190A2CCD00C2DB33</string>
 											<string>870A80BA190A2CCD00C2DB33</string>
-											<string>870A80DC190A2E0B00C2DB33</string>
+											<string>87E94C4D190AF25300054503</string>
+											<string>87E94CA6190AF97300054503</string>
+											<string>87E94CBE190AFA2400054503</string>
+											<string>87E94CBF190AFA2400054503</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -531,7 +531,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>87E94C48190AF01500054503</string>
+		<string>87E94CD3190AFABC00054503</string>
 		<string>87E94BE6190A2EB100054503</string>
 		<string>87E94BE7190A2EB100054503</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -556,12 +556,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>main.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -886,7 +888,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {650, 210}}</string>
 								<key>RubberWindowFrame</key>
-								<string>579 345 650 251 0 0 1280 778 </string>
+								<string>551 350 650 251 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -915,7 +917,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>579 345 650 251 0 0 1280 778 </string>
+			<string>551 350 650 251 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

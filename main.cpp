@@ -13,11 +13,20 @@ void drawTile(float tile[]) {
 	glBegin(GL_POLYGON);
 	glColor3f(0, 255, 0);
 	//printf("Made it here.");
-	for(int i = 2, length = 4*tile[1] + 2; i < length; i += 3) {
+	printf("TILE ID = %i\n", (int)tile[0]);
+	printf("LENGTH = %i\n", (int)(4*tile[1]+2));
+
+	for(int i = 2, length = 4*tile[1] + 2; i < length - tile[1]; i += 3) {
 		glVertex3f(tile[i], tile[i+1], tile[i+2]);
-		printf("LENGTH = %i\n", length);
 		printf("X VALUE = %4.2f Y VALUE = %4.2f Z VALUE = %4.2f\n", tile[i], tile[i+1], tile[i+2]);		
 	}
+	
+	for(int i = 2; i < 9; i +=3){
+		
+	}
+	
+	//glNormal3d(<#GLdouble nx#>, <#GLdouble ny#>, <#GLdouble nz#>);
+	
 	glEnd();
 	glFlush();
 	
@@ -68,6 +77,45 @@ void cb_reshape(int w, int h) {
 	glMatrixMode(GL_MODELVIEW);
 }
 
+void drawlevel2() {
+	float tile1[] = {1, 5, -2.5, 0, 2.5, -0.5, 0, 2.5, -0.5, 0, 1.5, -1.5, 0, 0.5, -2.5, 0, 0.5, 0, 2, 4, 7, 0};
+	float tile2[] = {2, 4, -0.5, 0, 2.5, 0.5, 0, 2.5, 0.5, 0, 1.5, -0.5, 0, 1.5, 0, 3, 5, 1};
+	float tile3[] = {3, 5, 0.5, 0, 2.5, 2.5, 0, 2.5, 2.5, 0, 0.5, 1.5, 0, 0.5, 0.5, 0, 1.5, 0, 0, 11, 6, 2};
+	float tile4[] = {4, 3, -0.5, 0, 1.5, -0.5, 0.5, 0.5, -1.5, 0, 0.5, 5, 8, 1};
+	float tile5[] = {5, 4, -0.5, 0, 1.5, 0.5, 0, 1.5, 0.5, 0.5, 0.5, -0.5, 0.5, 0.5, 2, 6, 9, 4};
+	float tile6[] = {6, 3, 0.5, 0, 1.5, 1.5, 0.0, 0.5, 0.5, 0.5, 0.5, 3, 10, 5};
+	float tile7[] = {7, 4, -2.5, 0, 0.5, -1.5, 0, 0.5, -1.5, 0, -0.5, -2.5, 0, -0.5, 1, 8, 15, 0};
+	float tile8[] = {8, 4, -1.5, 0, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, -0.5, -1.5, 0, -0.5, 4, 9, 12, 7};
+	float tile9[] = {9, 4, -0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, -0.5, -0.5, 0.5, -0.5, 5, 10, 13, 8};
+	float tile10[] = {10, 4, 0.5, 0.5, 0.5, 1.5, 0, 0.5, 1.5, 0, -0.5, 0.5, 0.5, -0.5, 6, 11, 14, 9};
+	float tile11[] = {11, 4, 1.5, 0, 0.5, 2.5, 0, 0.5, 2.5, 0, -0.5, 1.5, 0, -0.5, 3, 0, 17, 10};
+	float tile12[] = {12, 3, -1.5, 0, -0.5, -0.5, 0.5, -0.5, -0.5, 0, -1.5, 8, 13, 15};
+	float tile13[] = {13, 4, -0.5, 0.5, -0.5, 0.5, 0.5, -0.5, 0.5, 0, -1.5, -0.5, 0, -1.5, 9, 14, 16, 12};
+	float tile14[] = {14, 3, 0.5, 0.5, -0.5, 1.5, 0, -0.5, 0.5, 0, -1.5, 10, 17, 13};
+	float tile15[] = {15, 5, -2.5, 0, -0.5, -1.5, 0, -0.5, -0.5, 0, -1.5, -0.5, 0, -2.5, -2.5, 0, -2.5, 7, 12, 16, 0, 0};
+	float tile16[] = {16, 4, -0.5, 0, -1.5, 0.5, 0, -1.5, 0.5, 0, -2.5, -0.5, 0, -2.5, 13, 17, 0, 15};
+	float tile17[] = {17, 5, 1.5, 0, -0.5, 2.5, 0, -0.5, 2.5, 0, -2.5, 0.5, 0, -2.5, 0.5, 0, -1.5, 11, 0, 0, 16, 14};
+	
+	drawTile(tile1);
+	drawTile(tile2);
+	drawTile(tile3);
+	drawTile(tile4);
+	drawTile(tile5);
+	drawTile(tile6);
+	drawTile(tile7);
+	drawTile(tile8);
+	drawTile(tile9);
+	drawTile(tile10);
+	drawTile(tile11);
+	drawTile(tile12);
+	drawTile(tile13);
+	drawTile(tile14);
+	drawTile(tile15);
+	drawTile(tile16);
+	drawTile(tile17);
+
+}
+
 void cb_display() {
 	static clock_t previous_clock = 0;
 	static clock_t ms_since_last = 0;
@@ -86,8 +134,9 @@ void cb_display() {
 	
 	draw_axis(4.0);
 
-	float tile[] = {1.0f, 4.0f, -.5f, 0.0f, 2.0f, .5f, 0.0f, 2.0f, .5f, 0.0f, -2.0f, -.5f, 0.0f, -2.0f, 0.0f, 0.0f, 0.0f, 0.0f};
-	drawTile(tile);
+	//float tile[] = {1.0f, 4.0f, -.5f, 0.0f, 2.0f, .5f, 0.0f, 2.0f, .5f, 0.0f, -2.0f, -.5f, 0.0f, -2.0f, 0.0f, 0.0f, 0.0f, 0.0f};
+	//drawTile(tile);
+	drawlevel2();
 	
 	glColor3f(1, 1, 1);
 	
@@ -114,6 +163,8 @@ int main(int argc, char** argv) {
 	
 	glClearColor(0,0,0,0); // set background to black
 	glEnable(GL_DEPTH_TEST);
+	//glEnable(GL_LIGHTING);
+	//glEnable(GL_LIGHT0);
 	
 
 	
