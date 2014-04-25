@@ -8,6 +8,7 @@
 #include "util.h"
 #include <time.h>
 #include <math.h>
+#include "reader.h"
 
 
 void drawTile(float tile[]) {

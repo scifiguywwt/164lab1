@@ -1,11 +1,11 @@
 T164lab1
 v7
 r0
-t420158647.905304
+t420159651.978823
 cCheck dependencies
 cCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o /Users/adamwells/Documents/164lab1/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 cCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/util.o /Users/adamwells/Documents/164lab1/util.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-cCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader.o /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+cCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader.o /Users/adamwells/Documents/164lab1/reader.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 cLd /Users/adamwells/Documents/164lab1/build/Debug/164lab1 normal x86_64
 
 N/Developer/SDKs/MacOSX10.6.sdk
@@ -59,32 +59,38 @@ t1247548583
 s4552
 
 N/Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp
-c00000000535AE5370000000000000AC7
-t1398465847
-s2759
-i<string>
-i"reader.h"
+c00000000000000000000000000000000
+t2
+s0
 
 N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/164lab1.LinkFileList
-c00000000535AE4A0000000000000013A
-t1398465696
+c00000000535AE756000000000000013A
+t1398466390
 s314
 
 N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o
-t1398465570
-s16872
+t1398466840
+s61116
+
+N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader-5F3D7B3C21519F8D.o
+t1398466372
+s92000
+
+N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader-FE461AE122EA6B3B.o
+t2
+s0
 
 N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader.o
-t1398465847
-s92032
+t1398466391
+s92000
 
 N/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/util.o
 t1398463313
 s8124
 
 N/Users/adamwells/Documents/164lab1/build/Debug/164lab1
-t1398465847
-s34920
+t1398466840
+s35520
 
 N/Users/adamwells/Documents/164lab1/main.c
 c000000005357FCC50000000000000089
@@ -93,15 +99,31 @@ s137
 i<stdio.h>
 
 N/Users/adamwells/Documents/164lab1/main.cpp
-c00000000535AE4210000000000001828
-t1398465569
-s6184
+c00000000535AE917000000000000183C
+t1398466839
+s6204
 i<stdio.h>
 i<stdlib.h>
 i<GLUT/glut.h>
 i"util.h"
 i<time.h>
 i<math.h>
+i"reader.h"
+
+N/Users/adamwells/Documents/164lab1/reader.cpp
+c00000000535AE5370000000000000AC7
+t1398465847
+s2759
+i<string>
+i"reader.h"
+
+N/Users/adamwells/Documents/164lab1/reader.h
+c00000000535AE45C00000000000001EE
+t1398465628
+s494
+i<iostream>
+i<fstream>
+i<sstream>
 
 N/Users/adamwells/Documents/164lab1/untitled.h
 c0000000053598C4C000000000000008A
@@ -121,16 +143,16 @@ t1398460399
 s367
 
 N/Users/adamwells/Downloads/reader.h
-c00000000535AE45C00000000000001EE
-t1398465628
-s494
+c00000000535AE60300000000000001F0
+t1398466051
+s496
 i<iostream>
 i<fstream>
 i<sstream>
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies420158647#420158647#0(0"0(0#1#0"4317954048#0"0#
+lSLF07#2@18"Check dependencies420159651#420159651#0(0"0(0#1#0"4317954048#0"0#
 
 CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o /Users/adamwells/Documents/164lab1/main.c normal x86_64 c com.apple.compilers.gcc.4_2
 s419968069.209479
@@ -146,8 +168,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@49"Compile /Users/adamwells/Documents/164lab1/main.c419968069#419968069#0(0"0(0#0#41"/Users/adamwells/Documents/164lab1/main.c4317954048#1226"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/main.c -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o0#
 
 CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o /Users/adamwells/Documents/164lab1/main.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
-s420158370.013156
-e420158370.068574
+s420159639.965269
+e420159640.345701
 r1
 xCompileC
 xbuild/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o
@@ -156,7 +178,38 @@ xnormal
 xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@51"Compile /Users/adamwells/Documents/164lab1/main.cpp420158370#420158370#0(0"0(0#0#43"/Users/adamwells/Documents/164lab1/main.cpp4317954048#1247"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/main.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o0#
+lSLF07#2@51"Compile /Users/adamwells/Documents/164lab1/main.cpp420159639#420159640#0(0"0(0#0#43"/Users/adamwells/Documents/164lab1/main.cpp4317954048#1247"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/main.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/main.o0#
+
+CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader-5F3D7B3C21519F8D.o /Users/adamwells/Documents/164lab1/reader.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s420159172.385628
+e420159172.789372
+r1
+xCompileC
+xbuild/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader-5F3D7B3C21519F8D.o
+x/Users/adamwells/Documents/164lab1/reader.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/adamwells/Documents/164lab1/reader.cpp: In constructor 'reader::reader(std::ifstream&)':
+o/Users/adamwells/Documents/164lab1/reader.cpp:20: warning: unused variable 'tiles'
+lSLF07#2@53"Compile /Users/adamwells/Documents/164lab1/reader.cpp420159172#420159172#0(179"/Users/adamwells/Documents/164lab1/reader.cpp: In constructor 'reader::reader(std::ifstream&)':/Users/adamwells/Documents/164lab1/reader.cpp:20: warning: unused variable 'tiles'1(22@23"Unused variable 'tiles'420159172#96#83#0(6@45"/Users/adamwells/Documents/164lab1/reader.cpp420158647#20#0#20#0#19"unused variable '*'0(0#0#45"/Users/adamwells/Documents/164lab1/reader.cpp4317954048#1268"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/reader.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader-5F3D7B3C21519F8D.o0#
+
+CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader-FE461AE122EA6B3B.o /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s420159104.287058
+e420159104.298722
+r0
+xCompileC
+xbuild/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader-FE461AE122EA6B3B.o
+x/Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp: No such file or directory
+oi686-apple-darwin10-gcc-4.2.1: warning: '-x c++' after last input file has no effect
+oi686-apple-darwin10-gcc-4.2.1: no input files
+lSLF07#2@69"Compile /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp420159104#420159104#0(310"i686-apple-darwin10-gcc-4.2.1: /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp: No such file or directoryi686-apple-darwin10-gcc-4.2.1: warning: '-x c++' after last input file has no effecti686-apple-darwin10-gcc-4.2.1: no input filesCommand /Developer/usr/bin/gcc-4.2 failed with exit code 11(4@58"Command /Developer/usr/bin/gcc-4.2 failed with exit code 1420159104#18446744073709551615#0#0(1@0"0(0#0#61"/Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp4317954048#1284"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader-FE461AE122EA6B3B.o1#
 
 CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader.o /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 s420158647.363469
@@ -170,6 +223,21 @@ xx86_64
 xc++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@69"Compile /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp420158647#420158647#0(211"/Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp: In constructor 'reader::reader(std::ifstream&)':/Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp:20: warning: unused variable 'tiles'1(22@23"Unused variable 'tiles'420158647#112#99#0(6@61"/Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp420158647#20#0#20#0#19"unused variable '*'0(0#0#61"/Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp4317954048#1267"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/../../Downloads/reader.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader.o0#
+
+CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader.o /Users/adamwells/Documents/164lab1/reader.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
+s420159190.566142
+e420159191.020873
+r1
+xCompileC
+xbuild/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader.o
+x/Users/adamwells/Documents/164lab1/reader.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/adamwells/Documents/164lab1/reader.cpp: In constructor 'reader::reader(std::ifstream&)':
+o/Users/adamwells/Documents/164lab1/reader.cpp:20: warning: unused variable 'tiles'
+lSLF07#2@53"Compile /Users/adamwells/Documents/164lab1/reader.cpp420159190#420159191#0(179"/Users/adamwells/Documents/164lab1/reader.cpp: In constructor 'reader::reader(std::ifstream&)':/Users/adamwells/Documents/164lab1/reader.cpp:20: warning: unused variable 'tiles'1(22@23"Unused variable 'tiles'420159190#96#83#0(6@45"/Users/adamwells/Documents/164lab1/reader.cpp420158647#20#0#20#0#19"unused variable '*'0(0#0#45"/Users/adamwells/Documents/164lab1/reader.cpp4317954048#1251"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/reader.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/reader.o0#
 
 CCompileC build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/util.o /Users/adamwells/Documents/164lab1/util.cpp normal x86_64 c++ com.apple.compilers.gcc.4_2
 s420156113.086607
@@ -189,12 +257,12 @@ o/Users/adamwells/Documents/164lab1/util.cpp:125: warning: deprecated conversion
 lSLF07#2@51"Compile /Users/adamwells/Documents/164lab1/util.cpp420156113#420156113#0(418"/Users/adamwells/Documents/164lab1/util.cpp: In function 'void draw_axis(float)':/Users/adamwells/Documents/164lab1/util.cpp:125: warning: deprecated conversion from string constant to 'char*'/Users/adamwells/Documents/164lab1/util.cpp:125: warning: deprecated conversion from string constant to 'char*'/Users/adamwells/Documents/164lab1/util.cpp:125: warning: deprecated conversion from string constant to 'char*'3(22@53"Deprecated conversion from string constant to 'char*'420156113#82#112#0(6@43"/Users/adamwells/Documents/164lab1/util.cpp420155204#125#0#125#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'420156113#194#112#0(6@43"/Users/adamwells/Documents/164lab1/util.cpp420155204#125#0#125#0#49"deprecated conversion from string constant to '*'0(22@53"Deprecated conversion from string constant to 'char*'420156113#306#112#0(6@43"/Users/adamwells/Documents/164lab1/util.cpp420155204#125#0#125#0#49"deprecated conversion from string constant to '*'0(0#0#43"/Users/adamwells/Documents/164lab1/util.cpp4317954048#1247"    cd /Users/adamwells/Documents/164lab1    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch x86_64 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -fvisibility-inlines-hidden -mmacosx-version-min=10.6 -gdwarf-2 -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-generated-files.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-own-target-headers.hmap -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-all-target-headers.hmap -iquote /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/164lab1-project-headers.hmap -F/Users/adamwells/Documents/164lab1/build/Debug -I/Users/adamwells/Documents/164lab1/build/Debug/include -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources/x86_64 -I/Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/DerivedSources -c /Users/adamwells/Documents/164lab1/util.cpp -o /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/util.o0#
 
 CLd /Users/adamwells/Documents/164lab1/build/Debug/164lab1 normal x86_64
-s420158647.875165
-e420158647.905263
+s420159640.345957
+e420159640.390372
 r1
 xLd
 x/Users/adamwells/Documents/164lab1/build/Debug/164lab1
 xnormal
 xx86_64
-lSLF07#2@59"Link /Users/adamwells/Documents/164lab1/build/Debug/164lab1420158647#420158647#0(0"0(0#0#0"4317954048#512"    cd /Users/adamwells/Documents/164lab1    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/adamwells/Documents/164lab1/build/Debug -F/Users/adamwells/Documents/164lab1/build/Debug -filelist /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/164lab1.LinkFileList -mmacosx-version-min=10.6 -framework GLUT -framework OpenGL -o /Users/adamwells/Documents/164lab1/build/Debug/164lab10#
+lSLF07#2@59"Link /Users/adamwells/Documents/164lab1/build/Debug/164lab1420159640#420159640#0(0"0(0#0#0"4317954048#512"    cd /Users/adamwells/Documents/164lab1    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/adamwells/Documents/164lab1/build/Debug -F/Users/adamwells/Documents/164lab1/build/Debug -filelist /Users/adamwells/Documents/164lab1/build/164lab1.build/Debug/164lab1.build/Objects-normal/x86_64/164lab1.LinkFileList -mmacosx-version-min=10.6 -framework GLUT -framework OpenGL -o /Users/adamwells/Documents/164lab1/build/Debug/164lab10#
 
