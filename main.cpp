@@ -22,24 +22,59 @@ void drawTile(float tile[]) {
 		printf("X VALUE = %4.2f Y VALUE = %4.2f Z VALUE = %4.2f\n", tile[i], tile[i+1], tile[i+2]);		
 	}
 	
-	for(int i = 2; i < 9; i +=3){
-		
+	float normals[3][3];
+	for(int i = 2; i<5; i++){
+		normals[0][i-2] = tile[i];
+	}
+	for(int i = 5; i < 8; i++) {
+		normals[1][i-5] = tile[i];
+	}
+	for(int i = 8; i < 11; i++) {
+		normals[2][i-8] = tile[i];
 	}
 	
-	//glNormal3d(<#GLdouble nx#>, <#GLdouble ny#>, <#GLdouble nz#>);
+	float xNorm, yNorm, zNorm;
+	float ax, bx, ay, by, az, bz;
+	ax = normals[1][0] - normals[0][0];
+	ay = normals[1][1] - normals[0][1];
+	az = normals[1][2] - normals[0][2];
+	
+	bx = normals[2][0] - normals[0][0];
+	by = normals[2][1] - normals[0][1];
+	bz = normals[2][2] - normals[0][2];
+	
+	xNorm = ay*bz - az*by;
+	yNorm = ax*bz - az*bx;
+	zNorm = ax*by - ay*bx;
+	
+	glNormal3d(xNorm, yNorm, zNorm);
 	
 	glEnd();
 	glFlush();
 	
-	/*
-	GLUquadricObj *quadratic;
-	quadratic = gluNewQuadric();
-	gluCylinder(quadratic, 1, 1, 2, 32, 32);
+}
+
+void drawTee(float tee[]) {
+	glBegin(GL_QUADS);
+	glColor3f(255, 0, 0);
+	glVertex3f(tee[1]+.1, tee[2]+.01, tee[3]+.1);
+	glVertex3f(tee[1]+.1, tee[2]+.01, tee[3]-.1);
+	glVertex3f(tee[1]-.1, tee[2]+.01, tee[3]-.1);
+	glVertex3f(tee[1]-.1, tee[2]+.01, tee[3]+.1);
+	glEnd();
 	glFlush();
-	 */
-	
-	
-	//printf("Made it to here.");
+
+}
+
+void drawCup(float cup[]) {
+	glBegin(GL_QUADS);
+	glColor3f(0, 0, 255);
+	glVertex3f(cup[1]+.1, cup[2]+.01, cup[3]+.1);
+	glVertex3f(cup[1]+.1, cup[2]+.01, cup[3]-.1);
+	glVertex3f(cup[1]-.1, cup[2]+.01, cup[3]-.1);
+	glVertex3f(cup[1]-.1, cup[2]+.01, cup[3]+.1);
+	glEnd();
+	glFlush();
 }
 
 void cb_keyboard(unsigned char key, int x, int y) {
@@ -132,6 +167,8 @@ void drawlevel2() {
 	float tile15[] = {15, 5, -2.5, 0, -0.5, -1.5, 0, -0.5, -0.5, 0, -1.5, -0.5, 0, -2.5, -2.5, 0, -2.5, 7, 12, 16, 0, 0};
 	float tile16[] = {16, 4, -0.5, 0, -1.5, 0.5, 0, -1.5, 0.5, 0, -2.5, -0.5, 0, -2.5, 13, 17, 0, 15};
 	float tile17[] = {17, 5, 1.5, 0, -0.5, 2.5, 0, -0.5, 2.5, 0, -2.5, 0.5, 0, -2.5, 0.5, 0, -1.5, 11, 0, 0, 16, 14};
+	float tee[] = {1, -2.25, 0, 2.0};
+	float cup[] = {9, 0, 0.5, 0};
 	
 	drawTile(tile1);
 	drawTile(tile2);
@@ -150,6 +187,8 @@ void drawlevel2() {
 	drawTile(tile15);
 	drawTile(tile16);
 	drawTile(tile17);
+	drawTee(tee);
+	drawCup(cup);
 
 }
 
@@ -200,8 +239,8 @@ int main(int argc, char** argv) {
 	
 	glClearColor(0,0,0,0); // set background to black
 	glEnable(GL_DEPTH_TEST);
-	//glEnable(GL_LIGHTING);
-	//glEnable(GL_LIGHT0);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
 	
 
 	
